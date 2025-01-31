@@ -1,0 +1,296 @@
+
+.serviceCard {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.serviceCard img {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.serviceCard p {
+    text-align: center;
+}
+
+.enlarged {
+    transform: scale(2);
+    font-size: 1.5em;
+    z-index: 9999;
+}
+
+.serviceCard {
+    transition: transform 0.3s ease, font-size 0.3s ease;
+  }
+  
+  .enlarged {
+    transform: scale(2); /* This will enlarge the image and text */
+    font-size: 1.5em; /* Enlarge the text */
+    z-index: 9999; /* Ensure it's above other elements */
+  }
+  
+  img {
+    width: 100%; /* Ensure images fill the card */
+    transition: transform 0.3s ease;
+  }
+  
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+
+}
+body{
+    font-family:sans-serif
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 80px;
+}
+ul{
+    display: flex;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    margin-inline: 22px;
+}
+.logo{
+   font-size: 22px; 
+}
+.main{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    background-color: rgb(10, 91, 91);
+    padding: 33px;
+}
+.main img{
+    width: 600px;
+}
+.main text{
+    margin: 44px;
+
+}
+.mainText{
+    margin: 44px;
+    color: white;
+}
+.mainText h1{
+    font-size: 66px;
+}
+.mainText p{
+    margin-top: 22px;
+}
+.mainText button{
+    margin-top: 22px;
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 22px; 
+    border: none;
+}
+.head{
+    text-align: center;
+    padding: 88px;
+
+}
+.service{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap ;
+}
+.service .serviceCard{
+    width: 200px;
+    padding: 22px;
+    border: 2px solid black;
+    text-align: center;
+    margin-inline: 22px;
+    cursor:pointer;
+    margin: 22px;
+
+}
+.serviceCard:hover{
+    background-color: aquamarine;
+}
+.service .serviceCard img{
+    width: 120px;
+    height:100px;
+}
+
+.doctors {
+    z-index: -1;
+    display: flex;
+    width: 810px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+
+.team {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+}
+
+.team img {
+    width: 230px;
+    height: 220px;
+    margin-inline: 20px;
+}
+.blogs{
+   
+    display: flex;
+    justify-content: center;
+
+}
+.blogCard{
+    
+    width: 300px;
+    padding: 18px;
+    
+    background-color:rgb(10, 91, 91);
+    text-align: center;
+    color: white;
+    margin-inline: 20px;
+    margin: 22px;
+
+
+}
+
+.blogCard img{
+    width: 100px;
+    height: 100px;
+}
+.blogCard a{
+   
+    padding: 4px 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 8px;
+}
+.form{
+    width: 400px;
+    text-align: center;
+    margin: auto;
+    padding: 22px;
+    background-color: whitesmoke;
+}
+.form input{
+    width: 90%;
+    font-size: 20px;
+    padding: 11px;
+    margin-top: 16px;
+}
+.form button{
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    margin-top: 8px;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 66px;
+    margin-top: 66px;
+    background-color: black;
+    color: white;
+}
+.detailCard{
+    width: 400px;
+    padding: 42px;
+    background-color: lightblue;
+    text-align: center;
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,40%);
+}
+.detailCard img{
+    width: 200px;
+    height: 200px;
+    
+}
+#bar{
+    display: none;
+    font-size:22px
+}
+
+
+
+
+@media screen and (max-width:1100px) {
+    .main{
+        display: block;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width:850px){
+    .doctors{
+        width: 90%;
+
+    }
+    .team img{
+        width: 220px;
+        margin-inline: 11px;
+    }
+}
+@media screen and (max-width:760px){
+    .team img{
+        width: 120px;
+        margin-inline: 11px;
+    }  
+    . main img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:920px){
+    ul{
+        display:none
+    }
+    #bar{
+        display: block; 
+    }
+}
+@media screen and (max-width:620px){
+         .main h1{
+            font-size: 30px;
+
+         }
+         .form{
+            width: 70%;
+         }
+         .footer{
+            width: 70%;
+         }
+}
+
